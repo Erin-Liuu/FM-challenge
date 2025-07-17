@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github repo]()
+- Solution URL: [Github repo](https://github.com/Erin-Liuu/FM-challenge/tree/main/01-product-preview-card-component-main)
 - Live Site URL: [Product preview card component]()
 
 ## My process
@@ -20,14 +20,14 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS Flexbox
 - SCSS / Sass
+- CSS Grid
 - Mobile-first workflow
 
 ## Author
 
 - Website - [My Github homepage](https://github.com/KellyCHI22)
-- Frontend Mentor - [@Hsin-tingCHI](https://www.frontendmentor.io/profile/Hsin-tingCHI)
+- Frontend Mentor - [@Evie](https://www.frontendmentor.io/profile/Erin-Liuu)
 
 
 ## Acknowledgments
