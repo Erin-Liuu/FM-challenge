@@ -12,8 +12,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github repo](https://github.com/Erin-Liuu/FM-challenge/tree/main/01-product-preview-card-component-main)
-- Live Site URL: [Product preview card component](https://erin-liuu.github.io/FM-challenge/01-product-preview-card-component-main/)
+- Solution URL: [Github repo](https://github.com/Erin-Liuu/FM-challenge/tree/main/01-product-preview-card-component)
+- Live Site URL: [Product preview card component](https://erin-liuu.github.io/FM-challenge/01-product-preview-card-component/)
 
 ## My process
 
