@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+// ## Colors
+// ### Primary
+$color-primary-dark-cyan: hsl(158, 36%, 37%);
+$color-primary-cream: hsl(30, 38%, 92%);
+// ### Neutral
+$color-neutral-very-dark-blue: hsl(212, 21%, 14%);
+$color-neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+$color-neutral-white: hsl(0, 0%, 100%);
+
+// ## Typography
+// ### Body Copy
+$font-size-paragraph: 14px;
+// ### Font Families
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-fraunces: 'Fraunces', serif;
+
+// --- RESET ---
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family-montserrat;
+  font-size: $font-size-paragraph;
+  background-color: $color-primary-cream;
+  color: $color-neutral-dark-grayish-blue;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+}
+
+img, picture {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+// --- CARD STYLES ---
+.card {
+  display: grid;
+  max-width: 600px;
+  background-color: $color-neutral-white;
+  border-radius: 0.625rem;
+  overflow: hidden;
+
+  @media (min-width: 601px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card-content {
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+
+  @media (min-width: 601px) {
+    padding: 2rem;
+  }
+}
+
+.product-category {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.875rem;
+}
+
+.product-title {
+  font-family: $font-family-fraunces;
+  font-size: 2rem;
+  line-height: 1;
+  color: $color-neutral-very-dark-blue;
+}
+
+.product-description {
+  line-height: 1.7;
+}
+
+.price-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.price-current {
+  font-family: $font-family-fraunces;
+  font-size: 2rem;
+  color: $color-primary-dark-cyan;
+}
+
+.price-original {
+  text-decoration: line-through;
+}
+
+.add-btn {
+  background-color: $color-primary-dark-cyan;
+  color: $color-neutral-white;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($color-primary-dark-cyan, 10%);
+  }
+}
+
+// --- FOOTER ---
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
