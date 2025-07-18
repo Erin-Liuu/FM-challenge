@@ -1,0 +1,180 @@
+ @font-face {
+     font-family: 'HankenGrotesk';
+     src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+     font-weight: 100 900;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: 'HankenGrotesk';
+     src: url('../assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype');
+     font-weight: 700;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: 'HankenGrotesk';
+     src: url('../assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype');
+     font-weight: 800;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: 'HankenGrotesk';
+     src: url('../assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype');
+     font-weight: 500;
+     font-style: normal;
+ }
+
+ $light-red: hsl(0, 100%, 67%);
+ $orangey-yellow: hsl(39, 100%, 56%);
+ $green-teal: hsl(166, 100%, 37%);
+ $cobalt-blue: hsl(234, 85%, 45%);
+
+ //background
+ $light-slate-blue: hsl(252, 100%, 67%);
+ $light-royal-blue: hsl(241, 81%, 54%);
+
+ //circle
+ $violet-blue: hsla(256, 72%, 46%, 1);
+ $persian-blue: hsla(241, 72%, 46%, 0);
+
+ *,
+ *::before,
+ *::after {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+
+ body {
+     font-family: 'HankenGrotesk', sans-serif;
+     font-weight: 500;
+     font-size: 18px;
+     background-color: hsl(221, 100%, 96%);
+     color: lightgrey;
+     min-height: 100vh;
+     display: grid;
+     place-content: center;
+     //  margin: 1rem;
+ }
+
+ label {
+     color: grey;
+ }
+
+ .label-highlight {
+     color: hsl(224, 30%, 27%);
+     font-weight: 700;
+ }
+
+
+ .card {
+     border-radius: 2rem;
+     max-width: 700px;
+     //  max-height: 450px;
+ }
+
+ .card-summary-take,
+ .card-summary-comment {
+     font-size: 3rem;
+     font-weight: 700;
+ }
+
+ .card-summary {
+     background: linear-gradient(to bottom, $light-slate-blue, $light-royal-blue);
+     border-radius: 2rem;
+     padding: 2.2rem;
+     gap: 2.4rem;
+
+ }
+
+ @media (max-width: 601px) {
+     .card-summary {
+         padding-right: 5rem;
+         padding-left: 5rem;
+         border-top-left-radius: 0rem;
+         border-top-right-radius: 0rem;
+         gap: 1.2rem;
+     }
+ }
+
+ .card-summary-grade {
+     background: linear-gradient(to bottom, $violet-blue, $persian-blue);
+     line-height: 1.2;
+     width: 20vw;
+     max-width: 150px;
+     aspect-ratio: 1/1;
+ }
+
+ .card-content {
+     padding: 2.2rem;
+
+     div {
+         font-weight: 600;
+     }
+ }
+
+ .card-title {
+     color: hsl(224, 30%, 27%);
+     font-weight: 800;
+ }
+
+
+
+ .label-reaction {
+     background-color: rgba(255, 87, 87, 0.05);
+     border-radius: 0.5rem;
+
+     div {
+         color: $light-red;
+     }
+ }
+
+ .label-memory {
+     background-color: hsla(39, 100%, 56%, 0.05);
+     border-radius: 0.5rem;
+
+     div {
+         color: $orangey-yellow;
+     }
+ }
+
+ .label-verbal {
+     background-color: hsla(166, 100%, 37%, 0.05);
+     border-radius: 0.5rem;
+
+     div {
+         color: $green-teal;
+     }
+ }
+
+ .label-visual {
+     background-color: hsla(234, 85%, 45%, 0.05);
+     border-radius: 0.5rem;
+
+     div {
+         color: $cobalt-blue;
+     }
+ }
+
+ .continue-btn {
+     background-color: hsl(224, 30%, 27%);
+     font-size: 1.2rem;
+     font-weight: 700;
+
+     &:hover {
+         background: linear-gradient(to bottom, $light-slate-blue, $light-royal-blue);
+     }
+ }
+
+ .attribution {
+     font-size: 11px;
+     text-align: center;
+     margin-top: 1rem;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
