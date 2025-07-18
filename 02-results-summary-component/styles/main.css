@@ -64,7 +64,7 @@ label {
 .card-summary {
   background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   border-radius: 2rem;
-  padding: 2.2rem;
+  padding: 2.7rem;
   gap: 2.4rem;
 }
 
