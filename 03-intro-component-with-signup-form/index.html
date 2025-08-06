@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link rel="stylesheet" href="./styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'], // 👈 取代預設 sans
+            poppins: ['Poppins', 'sans-serif'], // 👈 自定義 class 使用
+          },
+          colors: {
+            red: {
+              400: 'hsl(0, 100%, 74%)',
+            },
+            green: {
+              400: 'hsl(154, 59%, 51%)',
+            },
+            purple: {
+              700: 'hsl(248, 32%, 49%)',
+            },
+            gray: {
+              900: 'hsl(249, 10%, 26%)'
+            },
+            blue: {
+              custom: 'hsl(228, 45%, 44%)'
+            }
+          }
+        },
+      },
+    };
+  </script>
+</head>
+
+<body
+  class="relative  font-poppins font-[16px] bg-red-400 min-h-screen max-w-screen bg-[url('./images/bg-intro-mobile.png')] sm:bg-[url('./images/bg-intro-desktop.png')]">
+  <main class="grid grid-cols-1 sm:grid-cols-2 sm:gap-5 min-h-screen">
+    <section class="text-white p-9 sm:p-7 flex flex-col justify-center items-center text-center sm:text-start gap-4">
+      <h2 class="font-bold text-3xl sm:text-5xl">
+        Learn to code by watching others
+      </h2>
+      <p class="text-base text-gray-100">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </section>
+    <section class="flex flex-col gap-5 p-9 sm:p-7 sm:justify-center">
+      <div
+        class="text-base text-center text-gray-100 p-5 px-[4rem] sm:p-5 bg-purple-700 rounded-lg shadow-[0_5px_0_0_rgba(0,0,0,0.2)]">
+        <span class="font-bold text-white">Try it free 7 days</span> then $20/mo. thereafter
+      </div>
+      <form id="form" class="p-5 pt-7 sm:p-7 bg-white flex flex-col gap-4 rounded-lg shadow-[0_5px_0_0_rgba(0,0,0,0.2)]">
+        <div class="relative">
+          <input id="firstName"
+            class="w-full p-3 font-semibold text-gray-900 placeholder:font-semibold placeholder:text-gray-500 placeholder:pl-2 border border-gray-300 rounded-md focus:ring-purple-700 focus:ring-1 focus:outline-none"
+            type="text" placeholder="First Name">
+          <img class="absolute top-1/2 right-5 -translate-y-3/4 hidden" src="./images/icon-error.svg" alt="">
+          <p class="text-red-400 text-xs text-end pt-1 hidden">First Name cannot be empty</p>
+        </div>
+        <div class="relative">
+          <input id="lastName"
+            class="w-full p-3 font-semibold text-gray-900 placeholder:font-semibold placeholder:text-gray-500 placeholder:pl-2 border border-gray-300 rounded-md focus:ring-purple-700 focus:ring-1 focus:outline-none"
+            type="text" placeholder="Last Name">
+          <img class="absolute top-1/2 right-5 -translate-y-3/4 hidden" src="./images/icon-error.svg" alt="">
+          <p class="text-red-400 text-xs text-end pt-1 hidden">Last Name cannot be empty</p>
+        </div>
+        <div class="relative">
+          <input id="email"
+            class="w-full p-3 font-semibold text-gray-900 placeholder:font-semibold placeholder:text-gray-500 placeholder:pl-2 border border-gray-300 rounded-md focus:ring-purple-700 focus:ring-1 focus:outline-none"
+            type="email" placeholder="Email Address">
+          <img class="absolute top-1/2 right-5 -translate-y-3/4 hidden" src="./images/icon-error.svg" alt="">
+          <p class="text-red-400 text-xs text-end pt-1 hidden">Looks like this is not an email</p>
+        </div>
+        <div class="relative">
+          <input id="password"
+            class="w-full p-3 font-semibold text-gray-900 placeholder:font-semibold placeholder:text-gray-500 placeholder:pl-2 border border-gray-300 rounded-md focus:ring-purple-700 focus:ring-1 focus:outline-none"
+            type="password" placeholder="Password">
+          <img class="absolute top-1/2 right-5 -translate-y-3/4 hidden" src="./images/icon-error.svg" alt="">
+          <p class="text-red-400 text-xs text-end pt-1 hidden">Password cannot be empty</p>
+        </div>
+        <button type="submit"
+          class="p-3 uppercase text-white bg-green-400 rounded-md shadow-[0_3px_0_0_hsl(154,57%,45%)] hover:bg-green-300">Claim
+          your free
+          trial</button>
+        <p class="text-xs text-center text-gray-400">
+          By clicking the button, you are agreeing to our <a href="#" class="text-red-400 font-bold">Terms and
+            Services</a>
+        </p>
+      </form>
+    </section>
+  </main>
+  <footer class="text-xs text-center absolute bottom-[0px] start-[50%] -translate-x-1/2 transform-gpu">
+    Challenge by <a class="text-blue-custom" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a class="text-blue-custom" href="#">Evie</a>.
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
