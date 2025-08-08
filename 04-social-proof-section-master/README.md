@@ -13,8 +13,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github repo](https://your-solution-url.com)
-- Live Site URL: [Demo](https://your-live-site-url.com)
+- Solution URL: [Github repo](https://github.com/Erin-Liuu/FM-challenge/tree/main/04-social-proof-section-master)
+- Live Site URL: [Demo](https://erin-liuu.github.io/FM-challenge/04-social-proof-section-master/)
 
 ## My process
 
