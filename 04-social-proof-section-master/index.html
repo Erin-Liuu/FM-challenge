@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Social proof section</title>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            league_spartan: ['League Spartan', 'sans-serif'],
+          },
+          colors: {
+            magenta: {
+              700: 'hsl(300, 43%, 22%)',
+              500: 'hsl(303, 10%, 53%)',
+              100: 'hsl(300, 24%, 96%)'
+            },
+            pink: {
+              500: 'hsl(333, 80%, 67%)'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="font-league_spartan text-[15px] gap-4 grid grid-cols-1 min-h-screen max-w-screen">
+    <div class="mx-[4rem]  sm:mx-[7rem] flex flex-col justify-center items-center sm:flex-row">
+      <!-- <section> 沒有明確指定 寬度或佔比 -->
+      <section class="m-3 mt-[2rem] flex-1 flex flex-col gap-5">
+        <h1 class="text-center sm:text-start sm:pr-[10rem] leading-[0.8] text-magenta-700 text-5xl font-black"> 10,000+
+          of our users love our products. </h1>
+        <p class="text-center sm:text-start sm:pr-[8rem] text-magenta-500">
+          We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.
+        </p>
+      </section>
+      <section class="w-full m-3 mt-[2rem] flex-1 flex flex-col gap-4">
+        <div
+          class="w-full p-4 px-7 rounded-lg bg-magenta-100 flex flex-col justify-center items-center gap-2 sm:flex-row sm:gap-5 sm:min-w-[400px] sm:max-w-[400px] sm:-translate-x-14">
+          <picture class="basis-[40%] flex flex-row justify-center gap-2">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+          </picture>
+          <p class="basis-[60%] text-magenta-700 font-black">Rated 5 Stars in Reviews</p>
+        </div>
+        <div
+          class="w-full p-4 px-7 rounded-lg bg-magenta-100 flex flex-col items-center gap-2 sm:flex-row sm:gap-5 sm:min-w-[400px] sm:max-w-[400px]">
+          <picture class="basis-[40%] flex flex-row justify-center gap-2">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+          </picture>
+          <p class="basis-[60%] text-magenta-700 font-black">Rated 5 Stars in Report Guru</p>
+        </div>
+        <div
+          class="w-full p-4 px-7 rounded-lg bg-magenta-100 flex flex-col justify-center items-center gap-2 sm:flex-row sm:gap-5 sm:min-w-[400px] sm:max-w-[400px] sm:translate-x-14">
+          <picture class="basis-[40%] flex flex-row justify-center gap-2">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+          </picture>
+          <p class="basis-[60%] text-magenta-700 font-black">Rated 5 Stars in BestTech</p>
+        </div>
+      </section>
+    </div>
+    <section
+      class="mx-[4rem] sm:mx-[7rem] text-white flex flex-col justify-center items-center gap-5 sm:gap-2 sm:flex-row">
+      <div class="bg-magenta-700 rounded-lg p-7 m-3">
+        <figure class="m-3 flex flex-row items-center gap-4">
+          <img class="w-10 h-10 rounded-full" src="./images/image-colton.jpg" alt="">
+          <figcaption class="leading-[1.2]">
+            <div class="font-black">Colton Smith</div>
+            <div class="text-pink-500">Verified Buyer</div>
+          </figcaption>
+        </figure>
+        <p class="m-3">
+          "We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!"
+        </p>
+      </div>
+      <div class="bg-magenta-700 rounded-lg p-7 m-3 sm:translate-y-4">
+        <figure class="m-3 flex flex-row items-center gap-4">
+          <picture>
+            <!-- <source srcset="./images/image-irene.jpg.jpg"> -->
+            <img class="w-10 h-10 rounded-full" src="./images/image-irene.jpg" alt="">
+          </picture>
+          <figcaption class="leading-[1.2]">
+            <div class="font-black">Irene Roberts</div>
+            <div class="text-pink-500">Verified Buyer</div>
+          </figcaption>
+        </figure>
+        <p class="m-3">
+          "Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery."
+        </p>
+      </div>
+      <div class="bg-magenta-700 rounded-lg p-7 m-3 sm:translate-y-8">
+        <figure class="m-3 flex flex-row items-center gap-4">
+          <img class="w-10 h-10 rounded-full" src="./images/image-anne.jpg" alt="Portrait of Anne Wallace">
+          <figcaption class="leading-[1.2]">
+            <div class="font-black">Anne Wallace</div>
+            <div class="text-pink-500">Verified Buyer</div>
+          </figcaption>
+        </figure>
+        <p class="m-3">
+          "Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
+      Name Here</a>.
+  </div>
+  <footer></footer>
+</body>
+
+</html>
